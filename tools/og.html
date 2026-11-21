@@ -1,0 +1,36 @@
+<!doctype html>
+<!-- Khung ảnh chia sẻ 1200x630. Dùng: og.html?img=...&t=...&s=... (xem tools/build_og.sh) -->
+<html lang="vi"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}
+html,body{width:1200px;height:630px;overflow:hidden}
+body{display:grid;grid-template-columns:560px 640px;background:#f6f4ef;color:#1b1b19;font-family:"Be Vietnam Pro",sans-serif}
+.ph{background:#ccc center/cover no-repeat}
+.tx{padding:56px 56px 48px;display:flex;flex-direction:column}
+.mark{font-weight:800;font-size:30px;display:flex;align-items:center;gap:14px;letter-spacing:-.02em}
+.mark i{width:18px;height:18px;background:#b8141b;display:inline-block}
+.where{margin-top:8px;font-weight:500;font-size:22px;color:#5d5a53}
+h1{margin-top:auto;font-weight:800;font-size:60px;line-height:1.08;letter-spacing:-.03em}
+.call{margin-top:28px;display:flex;gap:20px;align-items:center}
+.call b{background:#b8141b;color:#fff;font-size:32px;font-weight:800;padding:12px 20px;letter-spacing:-.01em;white-space:nowrap}
+.call span{white-space:nowrap}
+.call span{font-size:22px;font-weight:500;color:#5d5a53;line-height:1.3}
+</style></head>
+<body>
+<div class="ph" id="ph"></div>
+<div class="tx">
+  <div class="mark"><i></i>Hải Quân</div>
+  <div class="where">Gần Chợ Vĩnh Điện · Điện Bàn</div>
+  <h1 id="t"></h1>
+  <div class="call"><b id="p"></b><span id="s"></span></div>
+</div>
+<script>
+const q=new URLSearchParams(location.search);
+document.getElementById('ph').style.backgroundImage='url("'+q.get('img')+'")';
+document.getElementById('ph').style.backgroundPosition=q.get('pos')||'center';
+document.getElementById('t').textContent=q.get('t');
+document.getElementById('p').textContent=q.get('p');
+document.getElementById('s').innerHTML=(q.get('s')||'').replace(/\|/g,'<br>');
+</script>
+</body></html>

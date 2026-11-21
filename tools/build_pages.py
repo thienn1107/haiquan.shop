@@ -14,6 +14,7 @@ AREA = ["Điện Bàn", "Vĩnh Điện", "Đà Nẵng", "Quảng Nam"]
 PAGES = [
     {
         "slug": "xe-tai-dien-ban",
+        "share": "share-xe-tai.jpg",
         "nav": "Chở hàng",
         "title": "Xe tải chở hàng Điện Bàn – Thuê xe tải, xe lôi | Hải Quân",
         "desc": "Thuê xe tải chở hàng ở Điện Bàn, Vĩnh Điện: chở đồ đạc, dọn nhà, vật liệu xây dựng, hàng cồng kềnh, tuyến gần – xa. Gọi anh Hải 0707 477 243, anh Quân 0783 346 050.",
@@ -65,6 +66,7 @@ PAGES = [
     },
     {
         "slug": "cho-thue-dan-giao-dien-ban",
+        "share": "share-dan-giao.jpg",
         "nav": "Dàn giáo",
         "title": "Cho thuê, mua bán dàn giáo (dàn tiệp) Điện Bàn | Hải Quân",
         "desc": "Cho thuê và mua bán dàn giáo, dàn tiệp mới và cũ ở Điện Bàn, gần Chợ Vĩnh Điện. Có sẵn ở bãi, mâm sắt, ván, chở tới công trình. Gọi 0363 569 319.",
@@ -107,6 +109,7 @@ PAGES = [
     },
     {
         "slug": "vat-lieu-xay-dung-dien-ban",
+        "share": "share-vat-lieu.jpg",
         "nav": "Vật liệu",
         "title": "Vật liệu xây dựng Điện Bàn – Cát, đá, gạch, xi măng | Hải Quân",
         "desc": "Bán cát, đá, gạch, xi măng, ván ở Điện Bàn, gần Chợ Vĩnh Điện. Chở tận nơi bằng xe tải, xe lôi. Gọi 0363 569 319.",
@@ -196,9 +199,14 @@ def page(p):
 <meta property="og:type" content="website">
 <meta property="og:locale" content="vi_VN">
 <meta property="og:url" content="{url}">
+<meta property="og:site_name" content="Hải Quân Điện Bàn">
 <meta property="og:title" content="{esc(p['title'])}">
 <meta property="og:description" content="{esc(p['desc'])}">
-<meta property="og:image" content="{SITE}/images/og-cover.jpg">
+<meta property="og:image" content="{SITE}/images/{p['share']}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{esc(p['h1'])} – Hải Quân, gọi {tel_txt}">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&display=swap" rel="stylesheet">
