@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hải Quân – Dàn giáo, vật liệu và chở hàng ở Vĩnh Điện, Điện Bàn</title>
-<meta name="description" content="Bãi dàn giáo (dàn tiệp) gần Chợ Vĩnh Điện, Điện Bàn: bán, cho thuê dàn giáo mới và cũ, mâm sắt, ván; cát, đá, gạch, xi măng; nhận chở hàng bằng xe tải, xe lôi. Gọi 0363 569 319.">
+<title>Hải Quân Điện Bàn – Xe tải chở hàng, cho thuê dàn giáo, vật liệu xây dựng</title>
+<meta name="description" content="Hải Quân ở Điện Bàn, gần Chợ Vĩnh Điện: xe tải chở hàng, dọn nhà; cho thuê, mua bán dàn giáo (dàn tiệp) mới và cũ; cát, đá, gạch, xi măng. Gọi 0363 569 319 hoặc 0707 477 243.">
 <link rel="canonical" href="https://haiquan.shop/">
 <meta name="theme-color" content="#f6f4ef">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -24,7 +24,15 @@
 {
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
+  "@id": "https://haiquan.shop/#business",
   "name": "Hải Quân",
+  "alternateName": ["Vận chuyển Hải Quân", "Dàn giáo Hải Quân Điện Bàn"],
+  "areaServed": ["Điện Bàn", "Vĩnh Điện", "Đà Nẵng", "Quảng Nam"],
+  "makesOffer": [
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Xe tải chở hàng Điện Bàn", "url": "https://haiquan.shop/xe-tai-dien-ban/"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cho thuê, mua bán dàn giáo Điện Bàn", "url": "https://haiquan.shop/cho-thue-dan-giao-dien-ban/"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Vật liệu xây dựng Điện Bàn", "url": "https://haiquan.shop/vat-lieu-xay-dung-dien-ban/"}}
+  ],
   "url": "https://haiquan.shop/",
   "image": "https://haiquan.shop/images/og-cover.jpg",
   "telephone": "+84363569319",
@@ -39,166 +47,7 @@
 }
 </script>
 
-<style>
-:root{
-  --bg:#f6f4ef; --alt:#ebe7de; --ink:#1b1b19; --muted:#5d5a53; --line:#d6d1c5;
-  --accent:#b8141b; --accent-ink:#fff; --band:#ffd21f; --zalo:#0a5bd6;
-  --wrap:1200px; --gut:24px;
-  --f:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--f);-webkit-font-smoothing:antialiased}
-img{display:block;max-width:100%}
-a{color:inherit}
-.wrap{max-width:calc(var(--wrap) + 2*var(--gut));margin:0 auto;padding:0 var(--gut)}
-.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:8px 14px;z-index:100}
-.skip:focus{left:8px}
-:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-
-/* type */
-h1,h2,h3{margin:0;font-weight:800;letter-spacing:-.02em;line-height:1.12}
-h1{font-size:clamp(38px,5.2vw,68px)}
-h2{font-size:clamp(28px,3.4vw,44px)}
-h3{font-size:20px;letter-spacing:-.01em;line-height:1.3}
-.lede{font-size:clamp(17px,1.5vw,20px);line-height:1.55;color:var(--muted);max-width:34em}
-.label{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-
-/* buttons: one style */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;background:var(--accent);color:var(--accent-ink);font-weight:700;font-size:17px;text-decoration:none;border:0;transition:transform .15s ease,background .15s ease}
-.btn:hover{transform:translateY(-2px);background:#9c0f15}
-.btn:active{transform:translateY(0) scale(.98)}
-.btn--zalo{background:var(--zalo)}
-.btn--zalo:hover{background:#0848ab}
-.link{font-weight:700;text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 2px no-repeat;transition:background-size .25s ease;padding-bottom:2px}
-.link:hover{background-size:100% 2px}
-.link .arr{display:inline-block;transition:transform .2s ease}
-.link:hover .arr{transform:translateX(3px)}
-
-/* nav */
-.nav{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--line)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
-.mark{font-weight:800;font-size:21px;letter-spacing:-.02em;text-decoration:none;display:flex;align-items:center;gap:10px}
-.mark i{width:12px;height:12px;background:var(--accent);display:inline-block}
-.nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-weight:500}
-.nav ul a{text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 2px no-repeat;transition:background-size .25s;padding:6px 0}
-.nav ul a:hover{background-size:100% 2px}
-.nav .btn{min-height:44px;padding:0 18px;font-size:15px}
-@media (max-width:900px){.nav ul{display:none}}
-@media (max-width:480px){.nav .btn{display:none}}
-
-/* sections */
-main>section{padding:96px 0}
-.head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:48px;flex-wrap:wrap}
-.head p{margin:0;max-width:30em;color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--gut)}
-.ph{margin:0;overflow:hidden;background:var(--alt)}
-.ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
-.ph:hover img{transform:scale(1.03)}
-
-/* hero */
-.hero{padding:56px 0 96px}
-.hero .grid{align-items:center}
-.hero-text{grid-column:1/span 6}
-.hero-text .label{margin-bottom:18px}
-.hero-text h1{margin-bottom:22px}
-.hero-text .lede{margin:0 0 32px}
-.hero-actions{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center}
-.hero-ph{grid-column:8/span 5;aspect-ratio:4/5}
-.hero-ph img{object-position:50% 60%}
-@media (max-width:900px){
-  .hero{padding:32px 0 72px}
-  .hero-text,.hero-ph{grid-column:1/-1}
-  .hero-ph{aspect-ratio:4/3;order:-1}
-}
-[data-enter]>*{animation:enter .7s cubic-bezier(.2,.7,.2,1) both}
-[data-enter]>*:nth-child(2){animation-delay:.12s}
-@keyframes enter{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-
-/* visit */
-.visit-where{font-size:clamp(40px,6.4vw,92px);font-weight:800;letter-spacing:-.035em;line-height:1.02;margin:20px 0 48px;display:block;text-decoration:none}
-.visit-where span{background:linear-gradient(var(--accent),var(--accent)) 0 100%/0 5px no-repeat;transition:background-size .35s ease}
-.visit-where:hover span{background-size:100% 5px}
-.visit-panel{grid-column:1/span 6;background:var(--alt);padding:40px}
-.visit-ph{grid-column:7/span 6;aspect-ratio:4/3}
-.phones{list-style:none;margin:0 0 28px;padding:0}
-.phones li{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
-.phones li:first-child{padding-top:0}
-.phones span{color:var(--muted)}
-.phones a{font-size:24px;font-weight:800;text-decoration:none;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
-.phones a:hover{color:var(--accent)}
-@media (max-width:900px){.visit-panel,.visit-ph{grid-column:1/-1}.visit-panel{padding:28px 22px}}
-
-/* offer: dàn giáo — tall-small */
-.alt{background:var(--alt)}
-.ts-tall{grid-column:1/span 6;aspect-ratio:4/5}
-.ts-side{grid-column:8/span 5;display:flex;flex-direction:column;gap:40px}
-.ts-small{aspect-ratio:1;width:60%;align-self:flex-start}
-.rows{list-style:none;margin:0;padding:0}
-.rows li{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
-.rows li b{font-weight:500}
-.rows li span{color:var(--muted);text-align:right}
-.alt .rows li{border-color:#cfc9bc}
-@media (max-width:900px){.ts-tall,.ts-side{grid-column:1/-1}.ts-small{width:50%}}
-
-/* vật liệu — strip */
-.mat-groups{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gut);margin-bottom:48px}
-.strip{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gut)}
-.strip .ph{aspect-ratio:1}
-@media (max-width:900px){.mat-groups{grid-template-columns:1fr}.strip{grid-template-columns:repeat(2,1fr);gap:12px}}
-
-/* chở hàng — trio */
-.trio{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--gut);align-items:start;margin-bottom:56px}
-.trio .a{grid-column:1/span 5;aspect-ratio:4/5}
-.trio .b{grid-column:6/span 4;aspect-ratio:1}
-.trio .c{grid-column:10/span 3;aspect-ratio:3/4}
-.ship{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--gut)}
-.ship .rows{grid-column:1/span 6}
-.ship .call{grid-column:8/span 5}
-.ship .call p{margin:0 0 20px;color:var(--muted)}
-.ship .call .btns{display:flex;flex-wrap:wrap;gap:12px}
-@media (max-width:900px){
-  .trio .a{grid-column:1/-1}.trio .b{grid-column:1/span 6}.trio .c{grid-column:7/span 6;aspect-ratio:1}
-  .trio{gap:12px}
-  .ship .rows,.ship .call{grid-column:1/-1}
-}
-
-/* bãi hàng — wall */
-.wall{display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
-.wall .ph{aspect-ratio:3/4}
-@media (max-width:900px){.wall{grid-template-columns:repeat(2,1fr)}}
-
-/* close — brand band */
-.close{background:var(--band)}
-.close .grid{align-items:center}
-.close-text{grid-column:1/span 9}
-.close-text h2{font-size:clamp(34px,5vw,64px);margin-bottom:18px}
-.close-text p{margin:0 0 28px;font-size:18px;max-width:30em}
-.close-ph{grid-column:9/span 4;aspect-ratio:1}
-.close .btn{background:var(--ink)}
-.close .btn:hover{background:#000}
-@media (max-width:900px){.close-text,.close-ph{grid-column:1/-1}.close-ph{width:70%}}
-
-footer{padding:56px 0 40px;border-top:1px solid var(--line)}
-footer .grid{row-gap:32px}
-footer .f-addr{grid-column:1/span 6;font-size:clamp(22px,2.4vw,30px);font-weight:700;line-height:1.3;letter-spacing:-.01em}
-footer .f-addr a{text-decoration:none}
-footer .f-col{grid-column:span 3}
-footer .f-col p{margin:6px 0}
-footer .f-col a{text-decoration:none}
-footer .f-col a:hover{text-decoration:underline}
-footer .legal{grid-column:1/-1;color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:20px}
-@media (max-width:900px){footer .f-addr,footer .f-col{grid-column:1/-1}footer{padding-bottom:110px}}
-
-/* phone bar */
-.actionbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border-top:1px solid var(--line)}
-.actionbar a{min-height:58px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:17px;text-decoration:none;color:#fff;background:var(--accent)}
-.actionbar a+a{background:var(--zalo)}
-@media (max-width:900px){.actionbar{display:grid}}
-
-@media (max-width:900px){main>section{padding:72px 0}.head{margin-bottom:32px}}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
-</style>
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <a class="skip" href="#main">Bỏ qua, tới nội dung</a>
@@ -208,9 +57,9 @@ footer .legal{grid-column:1/-1;color:var(--muted);font-size:14px;border-top:1px 
     <a class="mark" href="#"><i aria-hidden="true"></i>Hải Quân</a>
     <nav aria-label="Mục lục">
       <ul>
-        <li><a href="#dan-giao">Dàn giáo</a></li>
-        <li><a href="#vat-lieu">Vật liệu</a></li>
-        <li><a href="#cho-hang">Chở hàng</a></li>
+        <li><a href="/cho-thue-dan-giao-dien-ban/">Dàn giáo</a></li>
+        <li><a href="/vat-lieu-xay-dung-dien-ban/">Vật liệu</a></li>
+        <li><a href="/xe-tai-dien-ban/">Chở hàng</a></li>
         <li><a href="#lien-he">Liên hệ</a></li>
       </ul>
     </nav>
@@ -224,7 +73,7 @@ footer .legal{grid-column:1/-1;color:var(--muted);font-size:14px;border-top:1px 
   <div class="wrap grid" data-enter>
     <div class="hero-text">
       <p class="label">Gần Chợ Vĩnh Điện · Điện Bàn</p>
-      <h1>Dàn giáo, vật liệu và xe chở hàng ở Vĩnh Điện</h1>
+      <h1>Xe tải chở hàng, dàn giáo và vật liệu ở Điện Bàn</h1>
       <p class="lede">Bán và cho thuê dàn giáo (dàn tiệp) mới, cũ, có sẵn ở bãi. Cát, đá, gạch, xi măng. Xe tải, xe lôi chở hàng gần – xa.</p>
       <div class="hero-actions">
         <a class="btn" href="tel:0363569319">Gọi hỏi giá 0363 569 319</a>
@@ -261,8 +110,8 @@ footer .legal{grid-column:1/-1;color:var(--muted);font-size:14px;border-top:1px 
 <section id="dan-giao" class="alt" aria-labelledby="h-dg">
   <div class="wrap">
     <div class="head">
-      <h2 id="h-dg">Dàn giáo mới và cũ</h2>
-      <p>Bán đứt hoặc cho thuê theo công trình. Hàng xếp sẵn ở bãi, gọi là chở tới.</p>
+      <h2 id="h-dg">Cho thuê, mua bán dàn giáo</h2>
+      <p>Dàn giáo (dàn tiệp) mới và cũ, bán đứt hoặc cho thuê theo công trình. Hàng xếp sẵn ở bãi, gọi là chở tới. <a class="link" href="/cho-thue-dan-giao-dien-ban/">Dàn giáo Điện Bàn <span class="arr">→</span></a></p>
     </div>
     <div class="grid">
       <figure class="ph ts-tall">
@@ -277,7 +126,7 @@ footer .legal{grid-column:1/-1;color:var(--muted);font-size:14px;border-top:1px 
             <li><b>Ván</b><span>bán</span></li>
             <li><b>Giao tới công trình</b><span>xe tải, xe ba gác</span></li>
           </ul>
-          <p style="margin:24px 0 0"><a class="link" href="tel:0363569319">Gọi báo giá dàn giáo <span class="arr">→</span></a></p>
+          <p style="margin:24px 0 0"><a class="link" href="/cho-thue-dan-giao-dien-ban/">Xem bảng dàn giáo và cách thuê <span class="arr">→</span></a></p>
         </div>
         <figure class="ph ts-small">
           <img src="images/khung-dan-giao-nam.webp" width="900" height="1200" loading="lazy" alt="Khung dàn giáo xếp nằm trên nền xi măng">
@@ -290,8 +139,8 @@ footer .legal{grid-column:1/-1;color:var(--muted);font-size:14px;border-top:1px 
 <section id="vat-lieu" aria-labelledby="h-vl">
   <div class="wrap">
     <div class="head">
-      <h2 id="h-vl">Cát, đá, gạch, xi măng</h2>
-      <p>Vật liệu cho nhà dân và công trình nhỏ, chở tận nơi trong Điện Bàn.</p>
+      <h2 id="h-vl">Vật liệu xây dựng</h2>
+      <p>Cát, đá, gạch, xi măng cho nhà dân và công trình nhỏ, chở tận nơi trong Điện Bàn. <a class="link" href="/vat-lieu-xay-dung-dien-ban/">Vật liệu Điện Bàn <span class="arr">→</span></a></p>
     </div>
     <div class="grid">
       <div class="mat-groups">
@@ -312,8 +161,8 @@ footer .legal{grid-column:1/-1;color:var(--muted);font-size:14px;border-top:1px 
 <section id="cho-hang" class="alt" aria-labelledby="h-ch">
   <div class="wrap">
     <div class="head">
-      <h2 id="h-ch">Chở hàng bằng xe tải, xe lôi</h2>
-      <p>Đồ đạc, vật liệu, hàng cồng kềnh. Nhà dân, cửa hàng, công trình. Tuyến gần hay xa đều nhận.</p>
+      <h2 id="h-ch">Xe tải chở hàng Điện Bàn</h2>
+      <p>Xe tải, xe lôi chở đồ đạc, dọn nhà, vật liệu, hàng cồng kềnh. Tuyến gần hay xa đều nhận. <a class="link" href="/xe-tai-dien-ban/">Thuê xe tải <span class="arr">→</span></a></p>
     </div>
     <div class="trio">
       <figure class="ph a"><img src="images/xe-tai-cho-do.webp" width="900" height="1200" loading="lazy" alt="Xe tải chở đầy đồ đạc dọn nhà đậu trước bãi hàng"></figure>
@@ -371,7 +220,7 @@ footer .legal{grid-column:1/-1;color:var(--muted);font-size:14px;border-top:1px 
 
 <footer>
   <div class="wrap grid">
-    <p class="f-addr"><a href="https://www.google.com/maps/search/?api=1&query=Ch%E1%BB%A3+V%C4%A9nh+%C4%90i%E1%BB%87n%2C+%C4%90i%E1%BB%87n+B%C3%A0n" target="_blank" rel="noopener">Gần Chợ Vĩnh Điện,<br>Điện Bàn, Đà Nẵng</a></p>
+    <p class="f-addr"><a href="https://www.google.com/maps/search/?api=1&query=Ch%E1%BB%A3+V%C4%A9nh+%C4%90i%E1%BB%87n%2C+%C4%90i%E1%BB%87n+B%C3%A0n" target="_blank" rel="noopener">Gần Chợ Vĩnh Điện,<br>Điện Bàn, Đà Nẵng</a><br><small style="font-size:15px;font-weight:400;color:var(--muted)">Trước đây thuộc tỉnh Quảng Nam</small></p>
     <div class="f-col">
       <p class="label">Gọi</p>
       <p><a href="tel:0363569319">0363 569 319</a> · dàn giáo</p>
@@ -379,10 +228,10 @@ footer .legal{grid-column:1/-1;color:var(--muted);font-size:14px;border-top:1px 
       <p><a href="tel:0783346050">0783 346 050</a> · anh Quân</p>
     </div>
     <div class="f-col">
-      <p class="label">Xem thêm</p>
-      <p><a href="#dan-giao">Dàn giáo</a></p>
-      <p><a href="#vat-lieu">Vật liệu</a></p>
-      <p><a href="#cho-hang">Chở hàng</a></p>
+      <p class="label">Dịch vụ</p>
+      <p><a href="/cho-thue-dan-giao-dien-ban/">Cho thuê dàn giáo Điện Bàn</a></p>
+      <p><a href="/vat-lieu-xay-dung-dien-ban/">Vật liệu xây dựng Điện Bàn</a></p>
+      <p><a href="/xe-tai-dien-ban/">Xe tải chở hàng Điện Bàn</a></p>
       <p><a href="https://www.facebook.com/hai.nguyenduy.3745" target="_blank" rel="noopener">Facebook</a></p>
     </div>
     <p class="legal">© <span id="y">2026</span> Hải Quân · haiquan.shop</p>
