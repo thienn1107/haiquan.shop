@@ -12,3 +12,8 @@
 **Quyết định:** mobile-first, màu đỏ/vàng/navy theo ảnh bìa, thanh Gọi/Zalo dính đáy trên mobile, schema LocalBusiness, sitemap/robots. Ảnh thật đặt vào `images/` (đang dùng nền tạm khi thiếu ảnh).
 
 **Non-goals:** bán hàng online, giỏ hàng, admin.
+
+## Bản 2 (21/11/2026) — ảnh thật, bớt "AI"
+- Theo nguyên tắc taste-skill (Leonxlnx/taste-skill, loại "place"): ảnh thật dẫn trang, nền phẳng, 1 kiểu nút, không gradient/icon vẽ/thẻ "vì sao chọn", không chú thích dưới ảnh, chữ viết thẳng.
+- 19 ảnh lấy từ Facebook anh Hải (images/*.webp), og-cover.jpg là ảnh bìa "Vận chuyển Hải Quân".
+- Bố cục: hero (ảnh anh Hải + dàn giáo) → bãi hàng & số điện thoại → dàn giáo → vật liệu → chở hàng → tường ảnh bãi → dải vàng liên hệ → footer.
